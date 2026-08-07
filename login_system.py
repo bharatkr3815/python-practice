@@ -6,7 +6,10 @@ password = '1234'
 name = input('Enter username =')
 passs = input('Enter password =')
 
-if name == username and passs == password:
-    print('Login Successful')
+if name == username:
+    if passs == password:
+       print('Login Successful.')
+    else:
+        print('Login Failed: Incorrect password.')
 else:
-    print('Invalid username or password')
+    print('Invalid username')
